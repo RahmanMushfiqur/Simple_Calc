@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>Calculator</h1>
+    <form method="POST" action="{{ url_for('index')}}">
+        <input type="number" name="first_number", placeholder="First Number" required>
+        
+        <select name="sign" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        
+        <input type="number" name="second_number", placeholder="Second Number" required>
+        <input type="submit" value="Check">
+    </form>
+
+</body>
+</html>
