@@ -19,7 +19,7 @@
         <input type="number" name="second_number", placeholder="Second Number" required>
         <input type="submit" value="Check">
     </form>
-    
+
 {% if result is defined %}
   <p><b>Result:</b> {{ result }}</p>
 {% endif %}
@@ -32,6 +32,8 @@
     {% endfor %}
   </ul>
 {% endif %}
-
+{% if error %}
+  <p style="color:red;"><b>{{ error }}</b></p>
+{% endif %}
 </body>
 </html>

@@ -37,12 +37,11 @@ def index():
         elif sign == '*':
             result = a * b
         elif sign == '/':
-            if b == 0:
-                return "Cant divide by zero!"
+            if b == 0:            
+                history = Calculation.query.order_by(Calculation.created.desc()).limit(10).all()
+                return render_template("index.html", error="Can't divide by zero", history=history)
             else:
                 result = a / b
-        else:
-            return "Invalid sign", 400
         
         row = Calculation(a=a, b=b, sign=sign, result=result)
         db.session.add(row)
