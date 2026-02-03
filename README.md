@@ -13,5 +13,7 @@ A simple web calculator built with Flask. It supports basic operations (+, -, *,
 Install
   - pip install virtualenv
   - pip install flask flask_sqlalchemy
+
 Run Simple_Calc.py
+
 Go to http://127.0.0.1:5000
