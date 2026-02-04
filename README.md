@@ -19,5 +19,6 @@ Run Simple_Calc.py
 Go to http://127.0.0.1:5000
 
 ## Demo
-![Simple Calc Screenshot](./1.PNG)
+![Simple Calc Screenshot](DOCS/1.PNG)
+![Simple Calc Screenshot](DOCS/2.PNG)
 
